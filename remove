@@ -2,6 +2,9 @@ if [ -z "$1" ]
   then
         echo "Please provide the name of the repository."
 else
+	# Don't let "others" access the backups
+	umask 0007
+
 	REPO_NAME=`echo $1 | sed 's/\(.*\)\(\.git$\)/\1/g'`.git
 	echo "Removing repository $REPO_NAME"
 	mkdir -p removed-repo-backups
