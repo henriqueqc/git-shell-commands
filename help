@@ -3,5 +3,5 @@ echo "    list             Lists all repositories"
 echo "    new <name>       Creates a new repository named <name>"
 echo "    remove <name>    Removes the repository named <name>"
 echo
-echo "When provinding the <name> to the new and remove commands, there is no need to provide"
-echo "the .git extention, it will be added for you."
+echo "When providing the <name> to the new and remove commands, there is no need to provide"
+echo "the .git extension, it will be added for you."
