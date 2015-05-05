@@ -20,5 +20,6 @@ mkdir ~/.ssh
 chmod 700 ~/.ssh
 touch .ssh/authorized_keys
 chmod 600 .ssh/authorized_keys
+git clone https://github.com/henriqueqc/git-shell-commands.git
 ```
 
