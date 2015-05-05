@@ -1,0 +1,9 @@
+if [ -z "$1" ]
+  then
+        echo "Please provide the name of the repository."
+else
+	REPO_NAME=`echo $1 | sed 's/\(.*\)\(\.git$\)/\1/g'`.git
+	echo "Removing repository $REPO_NAME"
+	mkdir -p removed-repo-backups
+	mv $REPO_NAME removed-repo-backups/$REPO_NAME-backup-`date +%s`
+fi
